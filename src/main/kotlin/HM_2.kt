@@ -1,6 +1,8 @@
 import kotlin.random.Random;
 
-
+fun printArray(array: Array<Int>){
+   println(array.joinToString(", "));
+}
 
 fun main(args: Array<String>) {
 
@@ -11,5 +13,6 @@ fun main(args: Array<String>) {
     val sortedArray = numbers.sortedArray();
 
     // print
-    println(sortedArray.joinToString(", "));
+    printArray(sortedArray);
+
 }
